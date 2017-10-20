@@ -1,4 +1,58 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+}
+
+div {
+  background-color: #dadada;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+  height: 250px;
+}
+
+.preview_baku {
+  background: #ffffff url('/images/baku.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+.preview_london {
+  background: #ffffff url('/images/london.png') no-repeat top center;
+  background-size: cover;
+}
+
+.preview_madrid {
+  background: #ffffff url('/images/madrid.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+.preview_rome {
+  background: #ffffff url('/images/rome.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+/* code added to create two-column design */
+@media screen and (min-width: 575px){
+   div {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+/* code added to create four-column design */
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 23%;
+  }
 }
